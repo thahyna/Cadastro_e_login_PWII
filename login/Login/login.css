@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height:100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-size: cover;     
+    background-color: rgb(68, 11, 68);
+    background-image: url(/login/Cadastrar/fundo-marmore.jpg);
+}
+
+
+.Login-container {
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 90px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    font-size: 50px;
+    color: #080407;
+    margin-left: 35%;
+}
+
+.campo-form label {
+    font-size: 15px;
+    color: #c53c97;
+    margin-top: 20px;
+}
+
+.campo-form {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: sans-serif;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.campo-form input {
+    padding: 12px 15px;
+    width: 160%;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+    text-align: left;
+}
+  
+.campo-form input:focus {
+    border-color: #a32993af;
+    outline: none;
+}
+
+.botao-login{
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.botao-login button {
+    padding: 12px 180px;
+    background-color: #6e0f57;
+    color: #FFF8F0;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-login button:hover {
+    background-color: #000000;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 120px;
+    background-color: #6e0f57;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    white-space: nowrap;
+    cursor: pointer;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.google-button button:hover {
+    background-color: #000000;
+}
+
+.google-button img {
+    width: 20px;
+    height: 20px;
+}
+  
+.divider {
+    text-align: center;
+    margin: 15px;
+    color: #A0765B;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
