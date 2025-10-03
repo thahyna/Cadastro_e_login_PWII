@@ -9,8 +9,7 @@ body{
     border: 0;
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-image: url(fundo-marmore.jpg);
+    background-color: #8a2f73;
 }
 
 
@@ -21,20 +20,20 @@ body{
     margin-left: 30%;
     margin-top: 50px;
     width: 500px;
-    height: 700px;
+    height: 550px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1{
     font-size: 50px;
     color: #080407;
-    margin-left: 25%;
+    margin-left: 15%;
 }
 
 .campo-form label {
     font-size: 15px;
     color: #c53c97;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .campo-form {
@@ -69,7 +68,7 @@ h1{
 
 .botao-cadastro button {
     padding: 12px 165px;
-    background-color: #6e0f57;
+    background-color: black;
     color: #FFF8F0;
     font-size: 16px;
     border: none;
@@ -81,29 +80,23 @@ h1{
 .botao-cadastro button:hover {
     background-color: #000000;
 }
-
-.botao-login{
-    padding-left: 50px;
-    padding-top: 15px;
-}
-
-.botao-login button {
-    padding: 12px 160px;
-    background-color: #6e0f57;
-    color: #FFF8F0;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.botao-login button:hover {
-    background-color: #000000;
-}
   
 .divider {
     text-align: center;
     margin: 20px;
     color: #A0765B;
+}
+
+.cadastrar {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cadastrar:hover {
+    text-decoration: underline;
 }

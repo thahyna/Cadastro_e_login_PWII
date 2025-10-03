@@ -32,16 +32,17 @@ if(isset($_POST['entrar'])){
     if($con){
         $user = $usuario->procurarUsuarioPorEmail($email);
         if($user){
-            $pass = $usuario->procuraSenha($senha);
-            if($pass){
-                $_SESSION['email'] = $email;
-                echo header("location:home.php");
+            if($user['senha'] === $senha){
+                $_SESSION['nome']  = $user['nome']; 
+                $_SESSION['email'] = $user['email']; 
+                header("location: home.php");
             } else {
                 echo "<script>alert('Senha incorreta');</script>";
             }
         } else {
-            echo "<script>alert('Usuário Imcoorreto');</script>";
+            echo "<script>alert('Usuário incorreto');</script>";
         }
     }
 }
+
 ?>

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tela de Cadastro</title>
+    <title>Cadastro</title>
 </head>
 <body>
 
     <div class="cadastro-container">
-        <h1>Cadastre-se</h1>
+        <h1>Cadastrar Aluno</h1>
         <form method="post" action="login.php">
             <div class="campo-form">    
                 <label for="nome">Nome Completo</label>
@@ -17,8 +17,8 @@
             </div>
 
             <div class="campo-form">    
-                <label for="cpf">CPF</label>
-                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                <label for="cpf">RM</label>
+                <input type="text" id="RM" name="RM" placeholder="0000" required>
             </div>
 
             <div class="campo-form">    
@@ -35,12 +35,7 @@
                 <button type="submit" name="cadastrar">Cadastrar</button>
             </div>
         </form>
-        
-        <div class="divider">ou</div>
-
-        <div class="botao-login">
-            <a href="login.html"><button type="button">Fazer Login</button></a>
-        </div>
+        <a href="login.html" class="cadastrar">Já tem conta? logar-se</a>
     </div>
 
 </body>
